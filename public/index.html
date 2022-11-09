@@ -6,17 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list</title>
     <script src="/main.js" defer></script>
+    <style>
+        #channel {
+            height: 80vh;
+            margin: auto;
+            width: 50vw;
+            background-color: aliceblue;
+            overflow: scroll;
+        }
+        form {
+            margin: auto;
+            width: 50vw;  
+        }
+    </style>
 </head>
 <body>
-    <section>
-        <h1>Todos</h1>
-        <ol id="list"></ol>
+    <section id="channel">
+        <ol id="chats"></ol>
     </section>
     <section>
         <form>
-            <label>Task</label>
-            <input name="task" required/>
-            <button>Add Task</button>
+            <input name="chat" required/>
+            <button>💬</button>
         </form>
     </section>
 </body>
